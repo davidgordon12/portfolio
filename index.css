@@ -8,10 +8,10 @@
     src: url('fonts/JosefinSans-Light.ttf');
 }
 
-html, body, a {
+html, body {
     font-family: 'Light';
     margin: 0;
-    text-decoration: none;
+    background-color: lightgray;
 }
 
 #navbar {
@@ -32,6 +32,10 @@ html, body, a {
     float: right;
     padding-right: 40px;
 
+}
+
+a {
+    text-decoration: none;
 }
 
 #name {
