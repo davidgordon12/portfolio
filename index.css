@@ -1,0 +1,63 @@
+@font-face {
+    font-family: 'Regular';
+    src: url('fonts/JosefinSans-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Light';
+    src: url('fonts/JosefinSans-Light.ttf');
+}
+
+html, body, a {
+    font-family: 'Light';
+    margin: 0;
+    text-decoration: none;
+}
+
+#navbar {
+    position: absolute;
+    top: 0;
+    height: 100px;
+    width: 100%;
+    background-color: #f3ede9;
+}
+
+#intro {
+    color: #4a4a4a;
+    padding-left: 40px;
+    float: left;
+}
+
+#links {
+    float: right;
+    padding-right: 40px;
+
+}
+
+#name {
+    margin-bottom: -20px;
+}
+
+#home {
+    color: #4a4a4a;
+}
+
+#projects {
+    color: #4a4a4a;
+}
+
+#links {
+    display: flex;
+}
+
+ul {
+    list-style: none;
+    text-align: center;
+}
+
+#bar {
+    border: none;
+    background-color: #4a4a4a;
+    height: 1px;
+    width: 180px;
+}
