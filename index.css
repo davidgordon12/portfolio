@@ -41,7 +41,6 @@ html, body {
 #links {
     float: right;
     padding-right: 40px;
-
 }
 
 #name {
@@ -49,9 +48,13 @@ html, body {
     text-decoration: none;
 }
 
-#home {
+#home, #projects {
     color: #4a4a4a;
     text-decoration: none;
+}
+
+#home:hover, #projects:hover {
+    color: #3b1d12;
 }
 
 #projects {
@@ -67,11 +70,12 @@ ul {
     text-align: center;
 }
 
-#bar {
+#bar_h, #bar_p {
     border: none;
     background-color: #4a4a4a;
     height: 1px;
     width: 180px;
+    margin-top: -12px;
 }
 
 #content {
