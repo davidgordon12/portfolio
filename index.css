@@ -19,7 +19,8 @@ html, body {
     top: 0;
     height: 100px;
     width: 100%;
-    background-color: #E4DEDA;
+    background-color: #dad5d1;
+    z-index: 99;
 }
 
 #intro {
@@ -91,7 +92,7 @@ ul {
     color: #3b3b3b;
     width: 450px;
     height: 400px;
-    background-color: #e5e7e8;
+    background-color: #e7e5e5;
     padding-inline: 120px;
     padding-top: 40px;
 }
@@ -106,10 +107,88 @@ ul {
 }
 
 #right_about {
-    border: #4a4a4a;
     margin-top: 110px;
     margin-left: -100px;
     width: 450px;
     height: 220px;
+    background-color: #d4cfcb;
+}
+
+#square {
+    margin-top: 110px;
+    margin-left: 80px;
+    width: 320px;
+    height: 220px;
+    background-color: #d4cfcb;
+}
+
+#socials {
+    position: absolute;
+    margin-right: 200px;
+    right: 0;
+    margin-top: -200px;
+    width: 600px;
+    height: 600px;
+    background-color: #ededed;
+}
+
+#social_links {
+    padding-top: 120px;
+    line-height: 80px;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 55px;
+    padding-bottom: 50px;
+    width: 400px;
+    margin-left: 100px;
+    margin-bottom: 40px;
+}
+
+li > a {
+    text-decoration: none;
+    color: #3b3b3b;
+}
+
+input, textarea {
     background-color: #E4DEDA;
+    border: none;
+    resize: none;
+    color: #3b3b3b;
+    padding-inline: 20px;
+    font-size: 15;
+}
+
+input:focus, textarea:focus {
+    border: none;
+}
+
+input {
+    height: 45px;
+    margin-bottom: 25px;
+}
+
+textarea {
+    padding-top: 16px;
+    height: 120px;
+}
+
+#footer {
+    height: 100px;
+    width: 100%;
+    background-color: #d5d5d5;
+}
+
+#footer > p {
+    color: whitesmoke;
+    padding-left: 100px;
+    padding-top: 40px;
+}
+
+#contact {
+    text-align: center;
+    font-size: 24;
+    letter-spacing: 3px;
 }
