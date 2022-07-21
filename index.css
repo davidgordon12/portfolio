@@ -1,31 +1,41 @@
 @font-face {
-    font-family: 'Regular';
-    src: url('fonts/JosefinSans-Regular.ttf');
+    font-family: 'Light';
+    src: url(fonts/Roboto-Light.ttf);
 }
 
 @font-face {
-    font-family: 'Light';
-    src: url('fonts/JosefinSans-Light.ttf');
+    font-family: 'Thin';
+    src: url(fonts/Roboto-Thin.ttf);
 }
 
 html, body {
     font-family: 'Light';
     margin: 0;
-    background-color: lightgray;
+    background-color: whitesmoke;
 }
 
 #navbar {
-    position: absolute;
+    position: sticky;
     top: 0;
     height: 100px;
     width: 100%;
-    background-color: #f3ede9;
+    background-color: #E4DEDA;
 }
 
 #intro {
-    color: #4a4a4a;
+    color: #3b3b3b;
     padding-left: 40px;
     float: left;
+    letter-spacing: 3px;
+}
+
+#intro > #name {
+    padding-left: 25px;
+}
+
+#intro > p {
+    padding-top: 7px;
+    font-size: 18;
 }
 
 #links {
@@ -34,16 +44,14 @@ html, body {
 
 }
 
-a {
-    text-decoration: none;
-}
-
 #name {
     margin-bottom: -20px;
+    text-decoration: none;
 }
 
 #home {
     color: #4a4a4a;
+    text-decoration: none;
 }
 
 #projects {
@@ -64,4 +72,40 @@ ul {
     background-color: #4a4a4a;
     height: 1px;
     width: 180px;
+}
+
+#content {
+    margin-top: 100px;
+}
+
+#about {
+    display: flex;
+    margin-left: 150px;
+}
+
+#left_about {
+    color: #3b3b3b;
+    width: 450px;
+    height: 400px;
+    background-color: #e5e7e8;
+    padding-inline: 120px;
+    padding-top: 40px;
+}
+
+#left_about > #about_title {
+    text-align: left;
+    font-size: 30;
+}
+
+#desc {
+    font-size: 15;
+}
+
+#right_about {
+    border: #4a4a4a;
+    margin-top: 110px;
+    margin-left: -100px;
+    width: 450px;
+    height: 220px;
+    background-color: #E4DEDA;
 }
