@@ -14,4 +14,16 @@ window.addEventListener('load', (event) => {
     projects.addEventListener('mouseout', (event) => {
         document.getElementById('bar_p').style.height = '1px';
     });
+
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if(entry.isIntersecting()) {
+                document.querySelectorAll(entry)[0].classList.add('fadeInLeft');
+                document.querySelectorAll(entry)[1].classList.add('fadeInRight');
+            }
+        })
+    })
+
+    observer.observe(document.getElementById('socials'));
+    observer.observe(document.getElementById('form'));
 });

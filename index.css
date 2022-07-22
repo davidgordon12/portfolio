@@ -104,10 +104,12 @@ ul {
 #left_about > #about_title {
     text-align: left;
     font-size: 30;
+    animation: fadein 2s;
 }
 
 #desc {
     font-size: 15;
+    animation: fadein 3s;
 }
 
 #right_about {
@@ -124,6 +126,14 @@ ul {
     width: 320px;
     height: 220px;
     background-color: #d4cfcb;
+}
+
+.fadeInRight {
+    animation: fadeInRight 1.5s both;
+}
+
+.fadeInLeft {
+    animation: fadeInRight 1.5s both;
 }
 
 #socials {
@@ -194,4 +204,31 @@ textarea {
     text-align: center;
     font-size: 24;
     letter-spacing: 3px;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@keyframes fadeInRight {
+    0%{
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInLeft {
+    0%{
+        opacity: 0;
+        transform: translateX(-80px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
