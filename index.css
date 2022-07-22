@@ -11,7 +11,7 @@
 html, body {
     font-family: 'Light';
     margin: 0;
-    background-color: whitesmoke;
+    background: whitesmoke; 
 }
 
 #navbar {
@@ -81,6 +81,10 @@ ul {
 
 #content {
     margin-top: 100px;
+    max-width: 1550px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #about {
@@ -123,9 +127,8 @@ ul {
 }
 
 #socials {
-    position: absolute;
+    float: right;
     margin-right: 200px;
-    right: 0;
     margin-top: -200px;
     width: 600px;
     height: 600px;
@@ -153,7 +156,7 @@ li > a {
 }
 
 input, textarea {
-    background-color: #E4DEDA;
+    background-color: #ededed;
     border: none;
     resize: none;
     color: #3b3b3b;
@@ -162,7 +165,7 @@ input, textarea {
 }
 
 input:focus, textarea:focus {
-    border: none;
+    outline: none;
 }
 
 input {
