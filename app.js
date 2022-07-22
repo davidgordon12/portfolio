@@ -17,11 +17,12 @@ window.addEventListener('load', (event) => {
 
     const observer = new IntersectionObserver(entries => {
         entries.forEach(entry => {
-            if(entry.isIntersecting()) {
-                document.querySelectorAll(entry)[0].classList.add('fadeInLeft');
-                document.querySelectorAll(entry)[1].classList.add('fadeInRight');
-            }
+            document.getElementById('socials').classList.toggle("fadeFromRight", entry.isIntersecting)
+            document.getElementById('form').classList.toggle("fadeFromLeft", entry.isIntersecting)
         })
+    },
+    {
+        threshold: 0.8,
     })
 
     observer.observe(document.getElementById('socials'));
