@@ -17,12 +17,12 @@ window.addEventListener('load', (event) => {
 
     const observer = new IntersectionObserver(entries => {
         entries.forEach(entry => {
-            document.getElementById('socials').classList.toggle("fadeFromRight", entry.isIntersecting)
-            document.getElementById('form').classList.toggle("fadeFromLeft", entry.isIntersecting)
+            document.getElementById('socials').classList.toggle("fadeInRight", entry.isIntersecting)
+            document.getElementById('form').classList.toggle("fadeInLeft", entry.isIntersecting)
         })
     },
     {
-        threshold: 0.8,
+        threshold: 0.7,
     })
 
     observer.observe(document.getElementById('socials'));
