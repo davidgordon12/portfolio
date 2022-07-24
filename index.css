@@ -99,6 +99,7 @@ ul {
     background-color: #e7e5e5;
     padding-inline: 120px;
     padding-top: 40px;
+    animation: fadeInLeft 1.4s both;
 }
 
 #left_about > #about_title {
@@ -118,6 +119,7 @@ ul {
     width: 450px;
     height: 220px;
     background-color: #d4cfcb;
+    animation: fadein 2s;
 }
 
 #square {
@@ -133,16 +135,17 @@ ul {
 }
 
 .fadeInLeft {
-    animation: fadeInRight 1.5s both;
+    animation: fadeInLeft 1.5s both;
 }
 
 #socials {
+    opacity: 0;
     float: right;
     margin-right: 200px;
     margin-top: -200px;
     width: 600px;
     height: 600px;
-    background-color: #ededed;
+    background-color: #e6e5e5;
 }
 
 #social_links {
@@ -151,7 +154,7 @@ ul {
 }
 
 #form {
-    display: flex;
+    opacity: 0;
     flex-direction: column;
     margin-top: 55px;
     padding-bottom: 50px;
@@ -166,12 +169,13 @@ li > a {
 }
 
 input, textarea {
-    background-color: #ededed;
+    background-color: #e6e5e5;
     border: none;
     resize: none;
     color: #3b3b3b;
     padding-inline: 20px;
     font-size: 15;
+    width: 400px;
 }
 
 input:focus, textarea:focus {
