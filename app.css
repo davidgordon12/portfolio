@@ -19,6 +19,7 @@ html, body {
     top: 0;
     height: 100px;
     width: 100%;
+    margin-bottom: 80px;
     background-color: #dad5d1;
     z-index: 99;
 }
@@ -227,8 +228,20 @@ textarea {
 
 /* PROJECTS PAGE */
 
-#card-left {
+#left { float: left; margin-top: -350px; }
+#right { float: right; margin-right: 50px;}
+#card-left { background-color: #e7e5e5; }
+#card-right { background-color: #e6e0db; }
 
+#card-left, #card-right {
+    width: 700px;
+    height: 400px;
+    margin-top: 350px;
+}
+
+#card-left>h2, #card-right>h2 {
+    font-family: 'Light';
+    padding-top: 25px;
 }
 
 #project-title {
@@ -236,19 +249,7 @@ textarea {
 }
 
 #project-desc {
-
-}
-
-#project-repo {
-
-}
-
-#project-link {
     
-}
-
-#card-right {
-
 }
 
 @keyframes fadein {
