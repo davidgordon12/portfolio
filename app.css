@@ -63,6 +63,7 @@ html, body {
 }
 
 #links {
+    margin-top: 15px;
     display: flex;
 }
 
@@ -164,6 +165,18 @@ ul {
     margin-bottom: 40px;
 }
 
+button {
+    cursor: pointer;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+    background-color: #e6e5e5;
+    margin-top: 30px;
+    height: 50px;
+    width: 150px;
+}
+
 li > a {
     text-decoration: none;
     color: #3b3b3b;
@@ -209,6 +222,33 @@ textarea {
     text-align: center;
     font-size: 24;
     letter-spacing: 3px;
+}
+
+
+/* PROJECTS PAGE */
+
+#card-left {
+
+}
+
+#project-title {
+
+}
+
+#project-desc {
+
+}
+
+#project-repo {
+
+}
+
+#project-link {
+    
+}
+
+#card-right {
+
 }
 
 @keyframes fadein {
