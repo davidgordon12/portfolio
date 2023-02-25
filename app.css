@@ -1,24 +1,98 @@
+/* GLOBAL */
+body {
+    background-color: rgb(12, 12, 12);
+    overflow-x: hidden;
+}
+
+h1 {
+    font-family: 'Rowdies', cursive;
+    font-weight: 400;
+    color: aliceblue;
+}
+
+h2 {
+    left: 50%;
+    top: 50%;
+    translate: -50% -50%;
+    position: absolute;
+    z-index: 4;
+}
+
+label,
+input,
+textarea {
+    font-family: 'Rowdies', cursive;
+    font-weight: 300;
+    color: aliceblue;
+    z-index: 3;
+}
+
+input,
+textarea {
+    background: none;
+}
+
 /* NAVBAR */
 .navbarScroll.navbarDark {
     transform: .2s ease-in-out;
-    background-color: black;
+    background-color: rgb(12, 12, 12);
 }
 
 .navbar-brand {
+    font-family: 'Rowdies', cursive;
     color: aliceblue;
     font-size: 1.5rem;
+}
+
+.nav-item {
+    font-family: 'Rowdies', cursive;
+    font-weight: 300;
+    color: aliceblue;
+    font-size: 1.1rem;
 }
 
 /* HOME */
 .bgimage {
     height:100vh;
-    background: url('https://wallpapers.com/images/featured/minimal-qsixk71w7hu3alee.jpg');
     background-size:cover;
     position:relative;
 }
 
+#blob {
+    background-color: white;
+    height: 34vmax;
+    aspect-ratio: 1.5 /1;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    translate: -50% -50%;
+    border-radius: 50%;
+    background: linear-gradient(to right, aquamarine, mediumpurple);
+    animation: rotate 20s infinite;
+    opacity: 0.6;
+    z-index: -1;
+    filter: blur(4rem);
+}
+
+@keyframes rotate {
+    from {
+      rotate: 0deg;
+    }
+    
+    50% {
+      scale: 1 1.5;
+    }
+    
+    to {
+      rotate: 360deg;
+    }
+  }
+
 .hero_title {
+    font-family: 'Rowdies', cursive;
+    font-weight: 400;
     font-size: 4.5rem;
+    opacity: 0.9;
 }
 .hero_desc {
     font-size: 2rem;
@@ -39,36 +113,33 @@ ul {
 
 
 /* SKILLS */
-#skills {
-    background-color: #9db0d1;
+.skill-container {
+    position: absolute;
+    width: 416px;
+    height: 280px;
+    background: linear-gradient(150deg, white, rgb(202, 202, 202), white);
+    border-radius: 10px;
+    opacity: .7;
+    filter: blur(1px);
 }
 
-.skillsText.card {
+.card.skillsText {
+    font-family: 'Rowdies', cursive;
+    font-weight: 300;
+    background: none;
     height: 280px;
     cursor: pointer;
+    color: rgb(36, 36, 36);
+    text-align: center;
+    transition: 0.3s ease-in-out;
 }
 
-.material-symbols-outlined {
-    text-align: center;
-    width: 100%;
+.card.skillsText:hover {
+    color: #4f5c88
 }
 
 #m-icon {
     font-size: 40px;
-}
-
-.card-title {
-    text-align: center;
-}
-.card:hover .skillsIcon {
-    color: #00009b;
-}
-
-.card-body {
-    transition: 0.3s ease-in-out;
-}
-.skillsText:hover {
-    color: #00009b;
 }
 
 .btn-navy {
@@ -81,17 +152,7 @@ ul {
     background-color: #1c2135;
 }
 
-#contact-btn {
-    background-color: black;
-    color: aliceblue;
-    display: block;
-    margin: auto auto auto auto;
-    transition: .25s ease-in-out;
-}
 
-#contact-btn:hover {
-    opacity: 0.8;
-}
 
 /* PORTFOLIO*/
 #portfolio-btn {
@@ -103,11 +164,21 @@ ul {
 }
 
 .card {
+    color: aliceblue;
+    text-align: center;
+    background: none;
     border: none;
 }
 
 /* CONTACT */
-#contact {
-    background-color: #9db0d1;
+#contact-btn {
+    background-color: black;
+    color: aliceblue;
+    display: block;
+    margin: auto auto auto auto;
+    transition: .25s ease-in-out;
 }
 
+#contact-btn:hover {
+    opacity: 0.8;
+}

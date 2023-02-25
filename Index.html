@@ -8,6 +8,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link href="app.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap');
+    </style>
 </head>
 
 <body>
@@ -42,13 +45,16 @@
         </div>
     </nav>
 
+    <div>
+
+    <div id="blob"></div>
+
     <!-- HOME -->
     <section class="bgimage" id="home">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-text">
-                    <h2 class="hero_title">David Gordon</h2>
-                    <p class="hero_desc">Full Stack Developer</p>
+                    <h2 data-value="DAVID GORDON" class="hero_title">DAVID GORDON</h2>
                 </div>
             </div>
         </div>
@@ -57,29 +63,31 @@
     <!-- ABOUT -->
     <section id="about">
         <div class="container mt-5 pb-5">
-            <h1 class="text-center">About Me</h1>
+            <h1 id="aboutme" class="text-center">About Me</h1>
             <div class="row mt-4">
                 <div class="col-lg-4">
                     <img src="https://avatars.githubusercontent.com/u/44374315?v=4"
                         class="imageAboutPage rounded-circle" alt="">
                 </div>
 
-                <div class="col-lg-8 mt-5">
+                <div class="col-lg-8 mt-5 text-light">
                     <h4>
                         My name is David, I'm a Full-Stack Developer from Canada, and I love to build new things!
-                        Ever since I was young, I've loved to explore new technologies, and figure out exactly how they
+                        Ever since I was young, I've loved to explore new technologies, and figure out exactly how
+                        they
                         portfolio, inside-out.
                     </h4>
                     <div class="row mt-5">
                         <h4>
-                            I'm particularly interested in the logic side of programming, like creating skills or
+                            I'm particularly interested in the logic side of programming, like creating desktop or
                             console
-                            applications. I've even been portfolioing on my own Operating System!
+                            applications. I've even been working on my own Operating System!
                         </h4>
                     </div>
                     <div class="row mt-5">
                         <h4>
-                            However, I do tend to dabble here and there in the Front-End side of things, like when I'm
+                            However, I do tend to dabble here and there in the Front-End side of things, like when
+                            I'm
                             building a project from scratch, so I am quite experienced in all fields
                         </h4>
                     </div>
@@ -94,6 +102,7 @@
             <h1 class="text-center pt-5">Skills</h1>
             <div class="row">
                 <div class="col-lg-4 mt-4">
+                    <div class="skill-container"></div>
                     <div class="card skillsText">
                         <div class="card-body">
                             <link rel="stylesheet"
@@ -103,13 +112,15 @@
                             </span>
                             <h4 class="card-title mt-3">App Development</h4>
                             <p class="card-text mt-3">
-                                I've developed a variety of different applications, Web, Desktop, and Mobile. Full Stack developement is one of my strongest skills, with experience in every category
+                                I've developed a variety of different applications, Web, Desktop, and Mobile. Full
+                                Stack developement is one of my strongest skills, with experience in every category
                             </p>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-lg-4 mt-4">
+                    <div class="skill-container"></div>
                     <div class="card skillsText">
                         <div class="card-body">
                             <link rel="stylesheet"
@@ -119,7 +130,7 @@
                             </span>
                             <h4 class="card-title mt-3">App Deployment</h4>
                             <p class="card-text mt-3">
-                                I have experience deploying applications with Docker and Azure, 
+                                I have experience deploying applications with Docker and Azure,
                                 along with other services like Databases and Unit Tests
                             </p>
                         </div>
@@ -127,6 +138,7 @@
                 </div>
 
                 <div class="col-lg-4 mt-4">
+                    <div class="skill-container"></div>
                     <div class="card skillsText">
                         <div class="card-body">
                             <link rel="stylesheet"
@@ -136,8 +148,10 @@
                             </span>
                             <h4 class="card-title mt-3">Quality Assurance</h4>
                             <p class="card-text mt-3">
-                                I strive to create clean, efficient code, that doesn't contain random bugs that hinder the developement process.
-                                Using QA techniques I've learned in college and in the field, I'm able to maintain that standard.
+                                I strive to create clean, efficient code, that doesn't contain random bugs that
+                                hinder the developement process.
+                                Using QA techniques I've learned in college and in the field, I'm able to maintain
+                                that standard.
                             </p>
                         </div>
                     </div>
@@ -146,7 +160,7 @@
             </div>
         </div>
     </section>
-    
+
     <!-- PORTFOLIO -->
     <section id="portfolio">
         <div class="container mt-5 pb-5">
@@ -154,16 +168,21 @@
             <div class="row">
                 <div class="col-lg-4 mt-4">
                     <div class="card border-dark rounded-0">
-                        <img class="card-img-top" src="https://www.pitman-training.com/media/6311/adobestock_225442477.jpeg" alt="Card image" style="width:100%">
+                        <img class="card-img-top"
+                            src="https://www.pitman-training.com/media/6311/adobestock_225442477.jpeg" alt="Card image"
+                            style="width:100%">
                         <div class="card-body">
                             <h4 class="card-title">Flashtyper</h4>
                             <p class="card-text">
-                                A clone of the popular Typeracer website, visit the page to find out how fast you can type.
+                                A clone of the popular Typeracer website, visit the page to find out how fast you
+                                can type.
                                 Features a leaderboard and a simple algorithm to calculate your score.
                             </p>
                             <div class="text-center">
-                                <a id="portfolio-btn" href="https://flashtyper.azurewebsites.net/" target="_blank" class="btn mx-3 btn-navy rounded-0">Live Demo</a>
-                                <a id="portfolio-btn" href="https://github.com/tehtko/FlashTyper-MVC" target="_blank" class="btn mx-3 btn-navy rounded-0">Github</a>
+                                <a id="portfolio-btn" href="https://flashtyper.azurewebsites.net/" target="_blank"
+                                    class="btn mx-3 btn-navy rounded-0">Live Demo</a>
+                                <a id="portfolio-btn" href="https://github.com/tehtko/FlashTyper-MVC" target="_blank"
+                                    class="btn mx-3 btn-navy rounded-0">Github</a>
                             </div>
                         </div>
                     </div>
@@ -171,16 +190,22 @@
 
                 <div class="col-lg-4 mt-4">
                     <div class="card portfolioContent border-dark rounded-0">
-                        <img class="card-img-top" src="https://images.pexels.com/photos/733857/pexels-photo-733857.jpeg?cs=srgb&dl=pexels-tirachard-kumtanom-733857.jpg&fm=jpg" alt="Card image" style="width:100%">
+                        <img class="card-img-top"
+                            src="https://images.pexels.com/photos/733857/pexels-photo-733857.jpeg?cs=srgb&dl=pexels-tirachard-kumtanom-733857.jpg&fm=jpg"
+                            alt="Card image" style="width:100%">
                         <div class="card-body">
                             <h4 class="card-title">Epistle</h4>
                             <p class="card-text">
-                                A simple, fully featured note taking Web App to take all your notes with you on the go.
-                                Login to see all your notes, categorize them with "Bookshelves" to keep yourself organized.
+                                A simple, fully featured note taking Web App to take all your notes with you on the
+                                go.
+                                Login to see all your notes, categorize them with "Bookshelves" to keep yourself
+                                organized.
                             </p>
                             <div class="text-center">
-                                <a id="portfolio-btn" href="https://epistle.azurewebsites.net/" target="_blank" class="btn mx-3 btn-navy rounded-0">Live Demo</a>
-                                <a id="portfolio-btn" href="https://github.com/tehtko/epistle" target="_blank" class="btn mx-3 btn-navy rounded-0">Github</a>
+                                <a id="portfolio-btn" href="https://epistle.azurewebsites.net/" target="_blank"
+                                    class="btn mx-3 btn-navy rounded-0">Live Demo</a>
+                                <a id="portfolio-btn" href="https://github.com/tehtko/epistle" target="_blank"
+                                    class="btn mx-3 btn-navy rounded-0">Github</a>
                             </div>
                         </div>
                     </div>
@@ -188,16 +213,21 @@
 
                 <div class="col-lg-4 mt-4">
                     <div class="card portfolioContent border-dark rounded-0">
-                        <img class="card-img-top" src="https://free4kwallpapers.com/uploads/originals/2021/03/26/xp-honkai-impact-wallpaper.jpg" alt="Card image" style="width:100%">
+                        <img class="card-img-top"
+                            src="https://free4kwallpapers.com/uploads/originals/2021/03/26/xp-honkai-impact-wallpaper.jpg"
+                            alt="Card image" style="width:100%">
                         <div class="card-body">
                             <h4 class="card-title">Roaring Palace</h4>
                             <p class="card-text">
-                                A dummy wiki created with C# and Blazor WASM, with a seperate Minimal RESTful API to serve content.
-                                The demo contains limited data to showcase what Blazor can do, as opposed to being a fully-featured wiki.
+                                A dummy wiki created with C# and Blazor WASM, with a seperate Minimal RESTful API to
+                                serve content.
+                                The demo contains limited data to demonstrate my understanding of blazor
                             </p>
                             <div class="text-center">
-                                <a id="portfolio-btn" href="https://roaring-palace.azurewebsites.net/" target="_blank" class="btn mx-3 btn-navy rounded-0">Live Demo</a>
-                                <a id="portfolio-btn" href="https://github.com/tehtko/honkai_wiki" target="_blank" class="btn mx-3 btn-navy rounded-0">Github</a>
+                                <a id="portfolio-btn" href="https://roaring-palace.azurewebsites.net/" target="_blank"
+                                    class="btn mx-3 btn-navy rounded-0">Live Demo</a>
+                                <a id="portfolio-btn" href="https://github.com/tehtko/honkai_wiki" target="_blank"
+                                    class="btn mx-3 btn-navy rounded-0">Github</a>
                             </div>
                         </div>
                     </div>
@@ -207,14 +237,16 @@
             <div class="row">
                 <div class="col-lg-4 mt-4">
                     <div class="card portfolioContent border-dark rounded-0">
-                        <img class="card-img-top" src="https://www.trentonsystems.com/hubfs/BIOS%20Image%20-2-2.jpeg" alt="Card image" style="width:100%">
+                        <img class="card-img-top" src="https://www.trentonsystems.com/hubfs/BIOS%20Image%20-2-2.jpeg"
+                            alt="Card image" style="width:100%">
                         <div class="card-body">
                             <h4 class="card-title">Lysia</h4>
                             <p class="card-text">
                                 A bare-bones Operating System kernel written in the Rust programming language🦀
                             </p>
                             <div class="text-center">
-                                <a id="portfolio-btn" href="https://github.com/tehtko/lysia" target="_blank" class="btn mx-3 btn-navy rounded-0">Github</a>
+                                <a id="portfolio-btn" href="https://github.com/tehtko/lysia" target="_blank"
+                                    class="btn mx-3 btn-navy rounded-0">Github</a>
                             </div>
                         </div>
                     </div>
@@ -222,14 +254,17 @@
 
                 <div class="col-lg-4 mt-4">
                     <div class="card portfolioContent border-dark rounded-0">
-                        <img class="card-img-top" src="https://www.vmcdn.ca/f/files/albertaprimetimes/baseball.jpg;w=960" alt="Card image" style="width:100%">
+                        <img class="card-img-top"
+                            src="https://www.vmcdn.ca/f/files/albertaprimetimes/baseball.jpg;w=960" alt="Card image"
+                            style="width:100%">
                         <div class="card-body">
                             <h4 class="card-title">Strikeout</h4>
                             <p class="card-text">
                                 A minimalistic 2D game with Sprites, Audio and custom Menu screens
                             </p>
                             <div class="text-center">
-                                <a id="portfolio-btn" href="https://github.com/tehtko/Strikeout" target="_blank" class="btn mx-3 btn-navy rounded-0">Github</a>
+                                <a id="portfolio-btn" href="https://github.com/tehtko/Strikeout" target="_blank"
+                                    class="btn mx-3 btn-navy rounded-0">Github</a>
                             </div>
                         </div>
                     </div>
@@ -237,19 +272,22 @@
 
                 <div class="col-lg-4 mt-4">
                     <div class="card portfolioContent border-dark rounded-0">
-                        <img class="card-img-top" src="https://www.techrepublic.com/wp-content/uploads/2021/05/macosterminal-hero.jpg" alt="Card image" style="width:100%">
+                        <img class="card-img-top"
+                            src="https://www.techrepublic.com/wp-content/uploads/2021/05/macosterminal-hero.jpg"
+                            alt="Card image" style="width:100%">
                         <div class="card-body">
                             <h4 class="card-title">Dread</h4>
                             <p class="card-text">
                                 A very slow and unoptimized, cross-platform shell written in Rust🦀
                             </p>
                             <div class="text-center">
-                                <a id="portfolio-btn" href="https://github.com/tehtko/Dread" target="_blank" class="btn mx-3 btn-navy rounded-0">Github</a>
+                                <a id="portfolio-btn" href="https://github.com/tehtko/Dread" target="_blank"
+                                    class="btn mx-3 btn-navy rounded-0">Github</a>
                             </div>
                         </div>
                     </div>
                 </div>
-                
+
             </div>
     </section>
 
@@ -261,18 +299,21 @@
                 <div class="col-lg-6">
                     <form>
                         <label for="name" class="form-label">Name</label>
-                        <input id="name" type="text" class="form-control form-control-lg border-dark rounded-0">
+                        <input id="name" type="text" class="form-control form-control-lg border-light rounded-0 bg-transparent text-light">
                         <label for="email" class="form-label mt-2">Email</label>
-                        <input id="email" type="email" class="form-control form-control-lg border-dark rounded-0">
+                        <input id="email" type="email" class="form-control form-control-lg border-light rounded-0 bg-transparent text-light">
                         <label for="text" class="form-label mt-2">Message</label>
                         <div class="mb-3">
-                            <textarea class="form-control border-dark rounded-0" rows="5" id="comment" name="text" ></textarea>
+                            <textarea class="form-control color border-light rounded-0 bg-transparent text-light" rows="5" id="comment"
+                                name="text"></textarea>
                         </div>
                     </form>
-                    <button id="contact-btn" type="button" class="btn mt-4 text-center rounded-0">Contact Me</button>
+                    <button id="contact-btn" type="button" class="btn mt-4 text-center rounded-0">Send!</button>
                 </div>
             </div>
         </div>
+    </div>
+
     </section>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
