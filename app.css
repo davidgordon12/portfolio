@@ -134,6 +134,10 @@ textarea {
     color: aliceblue;
 }
 
+#selfie {
+    width: 300px;
+}
+
 #cv {
     text-align: center;
     position: absolute;
