@@ -20,7 +20,7 @@ window.onpointermove = event => {
   blob.animate({
     left: `${clientX}px`,
     top: `${clientY}px`
-  }, { duration: 8000, fill: "forwards" });
+  }, { duration: 2000, fill: "forwards" });
 }
 
 // Animate text on mouse over

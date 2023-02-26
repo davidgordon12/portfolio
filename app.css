@@ -4,7 +4,6 @@ body {
     overflow-x: hidden;
 }
 
-
 #blob {
     background-color: white;
     height: 34vmax;
@@ -15,10 +14,10 @@ body {
     translate: -50% -50%;
     border-radius: 50%;
     background: linear-gradient(to right, aquamarine, mediumpurple);
-    animation: rotate 20s infinite;
-    opacity: 0.6;
+    animation: rotate 10s infinite;
+    opacity: 0.8;
     z-index: -1;
-    filter: blur(4rem);
+    filter: blur(200px);
 }
 
 @keyframes rotate {
@@ -80,13 +79,14 @@ textarea {
 
 .btn-navy {
     color: aliceblue;
-    background-color: rgb(12, 12, 12);;
+    background-color: rgb(12, 12, 12);
     border-radius: 10px;
+    transition: .2s ease-in-out;
 }
 
 .btn-navy:hover {
-    color: aliceblue;
-    background-color: #1c2135;
+    color: rgb(35, 35, 35);
+    background-color: #bdfda7;
 }
 
 /* NAVBAR */
@@ -152,7 +152,8 @@ ul {
 /* SKILLS */
 .skill-container {
     position: absolute;
-    width: 416px;
+    width: 100%;
+    margin-right: 3vw;
     height: 280px;
     background: linear-gradient(150deg, white, rgb(202, 202, 202), white);
     border-radius: 10px;
@@ -166,13 +167,13 @@ ul {
     background: none;
     height: 280px;
     cursor: pointer;
-    color: rgb(36, 36, 36);
+    color: aliceblue;
     text-align: center;
     transition: 0.3s ease-in-out;
 }
 
 .card.skillsText:hover {
-    color: #4f5c88
+    color: #bdfda7
 }
 
 #m-icon {
