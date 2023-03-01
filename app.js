@@ -20,11 +20,11 @@ window.onpointermove = event => {
   blob.animate({
     left: `${clientX}px`,
     top: `${clientY}px`
-  }, { duration: 8000, fill: "forwards" });
+  }, { duration: 4000, fill: "forwards" });
 }
 
-// Animate text on mouse over
-const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+// Animate text on load
+const letters = "ABcDeFGHIJKlmNoPQRSTUVWXYZ";
 
 let interval = null;
 
@@ -48,31 +48,6 @@ window.onload = () => {
         .join("");
       
       if(iteration >= name.dataset.value.length){ 
-        clearInterval(interval);
-      }
-      
-      iteration += 1 / 3;
-    }, 30);
-  }
-
-document.querySelector("h2").onmouseover = event => {  
-    let iteration = 0;
-    
-    clearInterval(interval);
-    
-    interval = setInterval(() => {
-      event.target.innerText = event.target.innerText
-        .split("")
-        .map((letter, index) => {
-          if(index < iteration) {
-            return event.target.dataset.value[index];
-          }
-        
-          return letters[Math.floor(Math.random() * 26)]
-        })
-        .join("");
-      
-      if(iteration >= event.target.dataset.value.length){ 
         clearInterval(interval);
       }
       
