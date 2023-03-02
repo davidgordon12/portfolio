@@ -1,7 +1,7 @@
 /* =========================== G L O B A L =========================== */
 body {
-    background-color: #191919;
-    overflow-x: hidden;
+    background-color: #070707;
+    overflow: hidden;
 }
 
 #github {
@@ -20,122 +20,332 @@ body {
     border-radius: 50%;
     background: linear-gradient(to right, white, aliceblue);
     animation: rotate 44s infinite;
-    opacity: 0.4;
+    opacity: 0.2;
     z-index: 2;
     filter: blur(4rem);
     transition: 1s ease-in-out all;
 }
 
-.twinkling{
-	width:10000px;
-	height: 100%;
-	background: transparent url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/twinkling.png") repeat;
-	background-size: 1000px 1000px;
-    position: absolute;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    z-index: 0;
-    animation:move-background 50s linear infinite;
+@-webkit-keyframes twinkle_one {
+    0% {
+        opacity: 1;
+    }
+
+    30% {
+        opacity: 1;
+    }
+
+    70% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
-@keyframes move-background {
-    from {
-          -webkit-transform: translate3d(0px, 0px, 0px);
-      }
-      to { 
-          -webkit-transform: translate3d(1000px, 0px, 0px);
-      }
-  }
-  @-webkit-keyframes move-background {
-    from {
-          -webkit-transform: translate3d(0px, 0px, 0px);
-      }
-      to { 
-          -webkit-transform: translate3d(1000px, 0px, 0px);
-      }
-  }
-  
-  @-moz-keyframes move-background {    
-      from {
-          -webkit-transform: translate3d(0px, 0px, 0px);
-      }
-      to { 
-          -webkit-transform: translate3d(1000px, 0px, 0px);
-      }
-  }
-  
-      @-webkit-keyframes move-background {
-      from {
-          -webkit-transform: translate3d(0px, 0px, 0px);
-      }
-      to { 
-          -webkit-transform: translate3d(1000px, 0px, 0px);
-      }
-  }
+@-moz-keyframes twinkle_one {
+    0% {
+        opacity: 1;
+    }
 
-  @keyframes fadeIn {
-	from {
-		opacity: 0;
-		transform: translate3d(0, -40%, 0);
-	}
-	to {
-		opacity: 1;
-		transform: translate3d(0, 0, 0);
-	}
+    30% {
+        opacity: 1;
+    }
+
+    70% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes twinkle_one {
+    0% {
+        opacity: 1;
+    }
+
+    30% {
+        opacity: 1;
+    }
+
+    70% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes twinkle_one {
+    0% {
+        opacity: 1;
+    }
+
+    30% {
+        opacity: 1;
+    }
+
+    70% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes twinkle_two {
+    0% {
+        opacity: 1;
+    }
+
+    25% {
+        opacity: 0;
+    }
+
+    80% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes twinkle_two {
+    0% {
+        opacity: 1;
+    }
+
+    25% {
+        opacity: 0;
+    }
+
+    80% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes twinkle_two {
+    0% {
+        opacity: 1;
+    }
+
+    25% {
+        opacity: 0;
+    }
+
+    80% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes twinkle_two {
+    0% {
+        opacity: 1;
+    }
+
+    25% {
+        opacity: 0;
+    }
+
+    80% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes twinkle_three {
+    0% {
+        opacity: 1;
+    }
+
+    30% {
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes twinkle_three {
+    0% {
+        opacity: 1;
+    }
+
+    30% {
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes twinkle_three {
+    0% {
+        opacity: 1;
+    }
+
+    30% {
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes twinkle_three {
+    0% {
+        opacity: 1;
+    }
+
+    30% {
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.star {
+    position: absolute;
+    background-color: white;
+}
+
+.star-type1 {
+    width: 1px;
+    height: 1px;
+    border-radius: 2px;
+    -webkit-box-shadow: 0 0 1px 1px white;
+    box-shadow: 0 0 1px 1px white;
+    -webkit-animation: twinkle_one 3s ease-in-out infinite;
+    -moz-animation: twinkle_one 3s ease-in-out infinite;
+    -o-animation: twinkle_one 3s ease-in-out infinite;
+    animation: twinkle_one 3s ease-in-out infinite;
+}
+
+.star-type2 {
+    width: 2px;
+    height: 2px;
+    border-radius: 2px;
+    -webkit-box-shadow: 0 0 2px 1px white;
+    box-shadow: 0 0 2px 1px white;
+    -webkit-animation: twinkle_two 12s ease-in-out infinite;
+    -moz-animation: twinkle_two 12s ease-in-out infinite;
+    -o-animation: twinkle_two 12s ease-in-out infinite;
+    animation: twinkle_two 12s ease-in-out infinite;
+}
+
+.star-type3 {
+    width: 2px;
+    height: 2px;
+    border-radius: 2px;
+    -webkit-box-shadow: 0 0 2px 0 white;
+    box-shadow: 0 0 2px 0 white;
+    -webkit-animation: twinkle_three 7s ease-in-out infinite;
+    -moz-animation: twinkle_three 7s ease-in-out infinite;
+    -o-animation: twinkle_three 7s ease-in-out infinite;
+    animation: twinkle_three 7s ease-in-out infinite;
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -60%, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
 }
 
 @keyframes fadeOut {
-	from {
-		opacity: 1;
-		transform: translate3d(0, 0, 0);
-	}
-	to {
-		opacity: 0;
-		transform: translate3d(0, 200%, 0);
-	}
+    from {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+
+    to {
+        opacity: 0;
+        transform: translate3d(0, 200%, 0);
+    }
 }
 
 @keyframes rotate {
     from {
-      rotate: 0deg;
+        rotate: 0deg;
     }
-    
-    50% {
-      scale: 1 1.5;
-    }
-    
-    to {
-      rotate: 360deg;
-    }
-  }
-  
-  .background-container{
-      position: fixed;
-      top: 0;
-      left:0;
-      bottom: 0;
-      right: 0;
-  }
-  
-  .stars {
-   background: black url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/stars.png) repeat;
-   position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      display: block;
-        z-index: 0;
-  }
 
+    50% {
+        scale: 1 1.5;
+    }
+
+    to {
+        rotate: 360deg;
+    }
+}
+
+.background-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
 
 /* =========================== H O M E =========================== */
 .outter {
-    position: absolute;
-    top: 60%;
-    transform: translateY(-60%);
+    margin-top: 25vmin;
 }
+
+.column {
+    float: left;
+    width: 50%;
+  }
+  
+  /* Clear floats after the columns */
+  .outter:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
 
 .hero-container {
     cursor: default;
@@ -143,31 +353,46 @@ body {
     opacity: 0.8;
 }
 
-.hero-container > h2 {
+.hero-container>h2 {
     font-family: 'Nunito', sans-serif;
     font-weight: 200;
     font-size: 6vmax;
     letter-spacing: 4px;
-    transition: 3s ease-in-out all;
 }
 
 .hero-bio {
     font-family: 'Nunito', sans-serif;
     margin-top: 30px;
     animation: fadeIn 1.6s ease-in-out both;
-    transition: 3s ease-in-out all;
 }
 
-.spacer { width: 100px; }
+.hero-btn {
+    margin-inline: 20px;
+    background: none;
+    border: none;
+    border-bottom: 1px solid;
+    transition: 0.25s ease-in-out all;
+}
+
+.hero-btn:hover {
+    scale: 1.1;
+}
 
 .projects {
     font-family: 'Nunito', sans-serif;
     color: aliceblue;
     opacity: 0.8;
     margin-top: 30px;
+    margin-left: 50px;
 }
 
-.projects > ul {
+#project-title {
+    margin-left: 30px;
+    padding-top: 30px;
+    transition: 0.5s ease-in-out all;
+}
+
+.projects>ul {
     margin-top: 30px;
     list-style: none;
     line-height: 5vh;
@@ -193,11 +418,14 @@ body {
     .hero-bio {
         font-size: 1.1vmax;
     }
+
     .projects {
         font-size: 1.1vmax;
     }
-    .outter {
-        top: 45%;
-        transform: translateY(-45%);
+}
+
+@media screen and (max-width: 800px) {
+    body {
+        overflow-y: auto;
     }
-  }
+}
