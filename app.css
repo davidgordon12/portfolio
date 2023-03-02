@@ -4,20 +4,26 @@ body {
     overflow-x: hidden;
 }
 
+#github {
+    margin-top: -5px;
+    margin-left: -5px;
+}
+
 #blob {
-    background-color: white;
+    background: white;
     height: 30vmax;
-    aspect-ratio: 1.5 /1;
+    width: 34vmax;
     position: fixed;
     left: 50%;
     top: 50%;
     translate: -50% -50%;
     border-radius: 50%;
     background: linear-gradient(to right, white, aliceblue);
-    animation: rotate 7s infinite;
+    animation: rotate 44s infinite;
     opacity: 0.4;
-    z-index: 0;
+    z-index: 2;
     filter: blur(4rem);
+    transition: 1s ease-in-out all;
 }
 
 .twinkling{
@@ -89,6 +95,20 @@ body {
 		transform: translate3d(0, 200%, 0);
 	}
 }
+
+@keyframes rotate {
+    from {
+      rotate: 0deg;
+    }
+    
+    50% {
+      scale: 1 1.5;
+    }
+    
+    to {
+      rotate: 360deg;
+    }
+  }
   
   .background-container{
       position: fixed;
@@ -128,12 +148,14 @@ body {
     font-weight: 200;
     font-size: 6vmax;
     letter-spacing: 4px;
+    transition: 3s ease-in-out all;
 }
 
 .hero-bio {
     font-family: 'Nunito', sans-serif;
     margin-top: 30px;
     animation: fadeIn 1.6s ease-in-out both;
+    transition: 3s ease-in-out all;
 }
 
 .spacer { width: 100px; }
@@ -150,6 +172,7 @@ body {
     list-style: none;
     line-height: 5vh;
     border-left: 1px solid;
+    transition: 2s ease-in-out all;
 }
 
 .project-item {
