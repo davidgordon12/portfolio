@@ -20,11 +20,7 @@ window.onpointermove = event => {
   blob.animate({
     left: `${clientX}px`,
     top: `${clientY}px`
-<<<<<<< HEAD
   }, { duration: 4000, fill: "forwards" });
-=======
-  }, { duration: 2000, fill: "forwards" });
->>>>>>> 9fb12503fa69a63c8baa172cbe9a006e82bfb8b1
 }
 
 // Animate text on load
