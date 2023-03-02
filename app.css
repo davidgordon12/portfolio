@@ -13,19 +13,11 @@ body {
     top: 50%;
     translate: -50% -50%;
     border-radius: 50%;
-<<<<<<< HEAD
     background: linear-gradient(to right, white, aliceblue);
     animation: rotate 7s infinite;
     opacity: 0.4;
     z-index: 0;
     filter: blur(4rem);
-=======
-    background: linear-gradient(to right, aquamarine, mediumpurple);
-    animation: rotate 10s infinite;
-    opacity: 0.8;
-    z-index: -1;
-    filter: blur(200px);
->>>>>>> 9fb12503fa69a63c8baa172cbe9a006e82bfb8b1
 }
 
 .twinkling{
