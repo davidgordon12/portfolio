@@ -110,7 +110,7 @@ function swapHero(event) {
             // Wait until old hero section has fallen off, then add the new one
             setTimeout(() => {
                 heroTitle.innerText = "Mangalogue";
-                heroBio.innerText = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sit amet ullamcorper felis. Maecenas ac bibendum nibh. Pellentesque ut vulputate elit, eu hendrerit eros. Vestibulum laoreet eget elit in pharetra. Fusce eget est posuere, facilisis enim non, gravida purus. Maecenas et congue elit, eleifend porta risus. In faucibus gravida posuere. \n \n ";
+                heroBio.innerText = "Mangalogue is a soon to be hub for free Manga content, created by amatuer artists and storytellers. Anyone will have the ability to share their creations, and get real feedback from enthusiasts and other creators. \n \n ";
                 heroTitle.style.animation = "fadeIn 1.6s ease-in-out both";
                 heroBio.style.animation = "fadeIn 1.6s ease-in-out both";
 
@@ -123,22 +123,17 @@ function swapHero(event) {
                 event.target.style.color = "#937ab2";
                 
                 let gitBtn = document.createElement("button");
-                let demoBtn = document.createElement("button");
 
                 gitBtn.innerText = "Source"
-                demoBtn.innerText = "Live Demo"
 
                 gitBtn.classList.add('hero-btn');
-                demoBtn.classList.add('hero-btn');
+
+                gitBtn.onclick = () => window.open("https://github.com/tehtko/Mangalogue", '_blank').focus()
 
                 heroBio.appendChild(gitBtn);
-                heroBio.appendChild(demoBtn);
 
                 gitBtn.style.color = "#937ab2";
                 gitBtn.style.borderColor = "#937ab2";
-
-                demoBtn.style.color = "#937ab2";
-                demoBtn.style.borderColor = "#937ab2";
             }, 1500);
 
 
@@ -152,7 +147,7 @@ function swapHero(event) {
             // Wait until old hero section has fallen off, then add the new one
             setTimeout(() => {
                 heroTitle.innerText = "Flashtyper";
-                heroBio.innerText = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sit amet ullamcorper felis. Maecenas ac bibendum nibh. Pellentesque ut vulputate elit, eu hendrerit eros. Vestibulum laoreet eget elit in pharetra. Fusce eget est posuere, facilisis enim non, gravida purus. Maecenas et congue elit, eleifend porta risus. In faucibus gravida posuere. \n \n ";
+                heroBio.innerText = "ASP.NET version of my typeracer clone, FlashTyper, featuring leaderboards and profiles. \n \n This is my first \'substantial\' ASP.NET project, that was not just a means of learning some concept. \n \n"
                 heroTitle.style.animation = "fadeIn 1.6s ease-in-out both";
                 heroBio.style.animation = "fadeIn 1.6s ease-in-out both";
                 // Change the theme of the webpage
@@ -171,6 +166,9 @@ function swapHero(event) {
 
                 gitBtn.classList.add('hero-btn');
                 demoBtn.classList.add('hero-btn');
+
+                gitBtn.onclick = () => window.open("https://github.com/tehtko/FlashTyper-MVC", '_blank').focus()
+                demoBtn.onclick = () => window.open("https://flashtyper.azurewebsites.net/", '_blank').focus()
 
                 heroBio.appendChild(gitBtn);
                 heroBio.appendChild(demoBtn);
@@ -192,7 +190,7 @@ function swapHero(event) {
             // Wait until old hero section has fallen off, then add the new one
             setTimeout(() => {
                 heroTitle.innerText = "Epistle";
-                heroBio.innerText = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sit amet ullamcorper felis. Maecenas ac bibendum nibh. Pellentesque ut vulputate elit, eu hendrerit eros. Vestibulum laoreet eget elit in pharetra. Fusce eget est posuere, facilisis enim non, gravida purus. Maecenas et congue elit, eleifend porta risus. In faucibus gravida posuere. \n \n ";
+                heroBio.innerText = "An online note-taking app focused on simplicity and being well organized. \n \n Built with ASP.NET MVC and EntityFramework Core, Epistle features \'Bookshelves\' to organize your notes into specific categories, with a simple 3 column layout that is responsive on Desktop and Mobile. \n \n ";
                 heroTitle.style.animation = "fadeIn 1.6s ease-in-out both";
                 heroBio.style.animation = "fadeIn 1.6s ease-in-out both";
                 // Change the theme of the webpage
@@ -208,9 +206,12 @@ function swapHero(event) {
 
                 gitBtn.innerText = "Source"
                 demoBtn.innerText = "Live Demo"
-
+                
                 gitBtn.classList.add('hero-btn');
                 demoBtn.classList.add('hero-btn');
+
+                gitBtn.onclick = () => window.open("https://github.com/tehtko/epistle", '_blank').focus()
+                demoBtn.onclick = () => window.open("https://epistle.azurewebsites.net", '_blank').focus()
 
                 heroBio.appendChild(gitBtn);
                 heroBio.appendChild(demoBtn);
@@ -232,7 +233,7 @@ function swapHero(event) {
             // Wait until old hero section has fallen off, then add the new one
             setTimeout(() => {
                 heroTitle.innerText = "Dread";
-                heroBio.innerText = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sit amet ullamcorper felis. Maecenas ac bibendum nibh. Pellentesque ut vulputate elit, eu hendrerit eros. Vestibulum laoreet eget elit in pharetra. Fusce eget est posuere, facilisis enim non, gravida purus. Maecenas et congue elit, eleifend porta risus. In faucibus gravida posuere. \n \n ";
+                heroBio.innerText = "Dread is an experimental terminal shell written in the Rust programming language. \n \n ";
                 heroTitle.style.animation = "fadeIn 1.6s ease-in-out both";
                 heroBio.style.animation = "fadeIn 1.6s ease-in-out both";
                 // Change the theme of the webpage
@@ -244,35 +245,30 @@ function swapHero(event) {
                 event.target.style.color = "#c3da65";
                 
                 let gitBtn = document.createElement("button");
-                let demoBtn = document.createElement("button");
 
                 gitBtn.innerText = "Source"
-                demoBtn.innerText = "Live Demo"
 
                 gitBtn.classList.add('hero-btn');
-                demoBtn.classList.add('hero-btn');
+
+                gitBtn.onclick = () => window.open("https://github.com/tehtko/Dread", '_blank').focus()
 
                 heroBio.appendChild(gitBtn);
-                heroBio.appendChild(demoBtn);
 
                 gitBtn.style.color = "#c3da65";
                 gitBtn.style.borderColor = "#c3da65";
-
-                demoBtn.style.color = "#c3da65";
-                demoBtn.style.borderColor = "#c3da65";
             }, 1500);
 
             break;
 
-        case "medusa":
+        case "acsit":
             // Hide old hero section
             heroTitle.style.animation = "fadeOut 1.6s ease-in-out both";
             heroBio.style.animation = "fadeOut 1.6s ease-in-out both";
 
             // Wait until old hero section has fallen off, then add the new one
             setTimeout(() => {
-                heroTitle.innerText = "Medusa";
-                heroBio.innerText = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sit amet ullamcorper felis. Maecenas ac bibendum nibh. Pellentesque ut vulputate elit, eu hendrerit eros. Vestibulum laoreet eget elit in pharetra. Fusce eget est posuere, facilisis enim non, gravida purus. Maecenas et congue elit, eleifend porta risus. In faucibus gravida posuere. \n \n ";
+                heroTitle.innerText = "ACSIT Portal";
+                heroBio.innerText = "ACSIT Portal is a forum written for Conestoga College students to share their business ideas. \n \n As my final capstone project, I was glad to lead my team when it came to Web Design and System Infrastructure, as well as taking care of all code implementation and testing. \n \n ";
                 heroTitle.style.animation = "fadeIn 1.6s ease-in-out both";
                 heroBio.style.animation = "fadeIn 1.6s ease-in-out both";
                 // Change the theme of the webpage
@@ -284,22 +280,17 @@ function swapHero(event) {
                 event.target.style.color = "#d54946";
 
                 let gitBtn = document.createElement("button");
-                let demoBtn = document.createElement("button");
 
                 gitBtn.innerText = "Source"
-                demoBtn.innerText = "Live Demo"
 
                 gitBtn.classList.add('hero-btn');
-                demoBtn.classList.add('hero-btn');
+
+                gitBtn.onclick = () => window.open("https://github.com/tehtko/ACSITPortal", '_blank').focus()
 
                 heroBio.appendChild(gitBtn);
-                heroBio.appendChild(demoBtn);
 
                 gitBtn.style.color = "#d54946";
                 gitBtn.style.borderColor = "#d54946";
-
-                demoBtn.style.color = "#d54946";
-                demoBtn.style.borderColor = "#d54946";
             }, 1500);
 
             break;
