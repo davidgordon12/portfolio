@@ -225,7 +225,7 @@ function swapHero(event) {
 
             break;
 
-        case "dread":
+        case "chip":
             // Hide old hero section
             heroTitle.style.animation = "fadeOut 1.6s ease-in-out both";
             heroBio.style.animation = "fadeOut 1.6s ease-in-out both";
