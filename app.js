@@ -232,8 +232,8 @@ function swapHero(event) {
 
             // Wait until old hero section has fallen off, then add the new one
             setTimeout(() => {
-                heroTitle.innerText = "Chip8";
-                heroBio.innerText = "Chip8 is an accurate Chip8 emulator written in the Rust programming language. \n \n ";
+                heroTitle.innerText = "Chip-8";
+                heroBio.innerText = "Chip-8 is an accurate Chip-8 emulator written in the Rust programming language. \n \n ";
                 heroTitle.style.animation = "fadeIn 1.6s ease-in-out both";
                 heroBio.style.animation = "fadeIn 1.6s ease-in-out both";
                 // Change the theme of the webpage
@@ -250,7 +250,7 @@ function swapHero(event) {
 
                 gitBtn.classList.add('hero-btn');
 
-                gitBtn.onclick = () => window.open("https://github.com/davidgordon12/Chip8", '_blank').focus()
+                gitBtn.onclick = () => window.open("https://github.com/davidgordon12/CHIP-8", '_blank').focus()
 
                 heroBio.appendChild(gitBtn);
 
