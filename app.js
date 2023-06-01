@@ -128,7 +128,7 @@ function swapHero(event) {
 
                 gitBtn.classList.add('hero-btn');
 
-                gitBtn.onclick = () => window.open("https://github.com/tehtko/Mangalogue", '_blank').focus()
+                gitBtn.onclick = () => window.open("https://github.com/davidgordon12/Mangalogue", '_blank').focus()
 
                 heroBio.appendChild(gitBtn);
 
@@ -167,7 +167,7 @@ function swapHero(event) {
                 gitBtn.classList.add('hero-btn');
                 demoBtn.classList.add('hero-btn');
 
-                gitBtn.onclick = () => window.open("https://github.com/tehtko/FlashTyper-MVC", '_blank').focus()
+                gitBtn.onclick = () => window.open("https://github.com/davidgordon12/FlashTyper-MVC", '_blank').focus()
                 demoBtn.onclick = () => window.open("https://flashtyper.azurewebsites.net/", '_blank').focus()
 
                 heroBio.appendChild(gitBtn);
@@ -210,7 +210,7 @@ function swapHero(event) {
                 gitBtn.classList.add('hero-btn');
                 demoBtn.classList.add('hero-btn');
 
-                gitBtn.onclick = () => window.open("https://github.com/tehtko/epistle", '_blank').focus()
+                gitBtn.onclick = () => window.open("https://github.com/davidgordon12/epistle", '_blank').focus()
                 demoBtn.onclick = () => window.open("https://epistle.azurewebsites.net", '_blank').focus()
 
                 heroBio.appendChild(gitBtn);
@@ -232,8 +232,8 @@ function swapHero(event) {
 
             // Wait until old hero section has fallen off, then add the new one
             setTimeout(() => {
-                heroTitle.innerText = "Dread";
-                heroBio.innerText = "Dread is an experimental terminal shell written in the Rust programming language. \n \n ";
+                heroTitle.innerText = "Chip8";
+                heroBio.innerText = "Chip8 is an accurate Chip8 emulator written in the Rust programming language. \n \n ";
                 heroTitle.style.animation = "fadeIn 1.6s ease-in-out both";
                 heroBio.style.animation = "fadeIn 1.6s ease-in-out both";
                 // Change the theme of the webpage
@@ -250,7 +250,7 @@ function swapHero(event) {
 
                 gitBtn.classList.add('hero-btn');
 
-                gitBtn.onclick = () => window.open("https://github.com/tehtko/Dread", '_blank').focus()
+                gitBtn.onclick = () => window.open("https://github.com/davidgordon12/Chip8", '_blank').focus()
 
                 heroBio.appendChild(gitBtn);
 
@@ -285,7 +285,7 @@ function swapHero(event) {
 
                 gitBtn.classList.add('hero-btn');
 
-                gitBtn.onclick = () => window.open("https://github.com/tehtko/ACSITPortal", '_blank').focus()
+                gitBtn.onclick = () => window.open("https://github.com/davidgordon12/ACSITPortal", '_blank').focus()
 
                 heroBio.appendChild(gitBtn);
 
